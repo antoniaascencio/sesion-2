@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html lang="es">
+     <head>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <title>Introducción a la programación para el Diseño de interacción </title>
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+         <link href="style.css" rel="stylesheet" />
+     </head>
+     <body>
+         <header>
+             <h1>Antonia Ascencio</h1>
+         </header>
+         <main>
+             <p>Soy Antonia Ascencio, tengo 20 años y me gustan el dibujo e ilustracion de personajes, la razo del porque tome este ramo es por que m ineresa aprender sobre programacion a pesar de que me cuenta mucho, espero a lo menos poder llegar a entender los puntos basicos. </p>
+         </main>     
+         <footer>
+         </footer>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+         <script>
+             var alternativas = ["canguro", "raton", "conejo", "leon", "liebre"];
+             function setup() {
+                 var lugar = select("footer");
+                 var alternativa = random(alternativas);
+                 createA("page.html"+"?dibuja="+alternativa, "Dibuja un " + alternativa).parent(lugar);
+                 noCanvas();
+             }
+         </script>
+     </body>
+ </html>
