@@ -3,8 +3,7 @@
 
  ### Evaluación Diagnóstica
 
- https://profesorfaco.github.io/interaccion/sesion_03/
- https://antoniaascencio.github.io/sesion-2/
+https://antoniaascencio.github.io/sesion-2/
 
  - - - - - - - 
 
