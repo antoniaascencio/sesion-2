@@ -45,7 +45,7 @@ main p{
 footer {
     position: absolute;
     bottom: 0;
-    text-align: right;
+   
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,7 +58,7 @@ footer a {
     border: 2px solid gray;
     border-radius: 0.3rem;
     padding: 0.5rem 0.75rem;
-    box-shadow: 0px 0px 3px #efefef;
+    box-shadow: 0px 0px 3px #bbb;
     background: white;
 }
 
