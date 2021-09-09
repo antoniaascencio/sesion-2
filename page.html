@@ -10,17 +10,26 @@
     </head>
     <body>
         <header><h1>Dibuja un </h1></header>
-        <footer><a href="#" id="descarga">Descarga tu </a></footer>
+        <footer>
+             <a href="index.html">Volver</a>
+            <div id="controles"></div>
+            <a href="#" id="descarga">Descarga tu Dibujo!</a>
+        </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
         <script>
             var que = new URLSearchParams(window.location.search).get("dibuja");
             document.querySelector("h1").textContent += que;
+            /*
             document.querySelector("a").textContent += que;
-            function setup() {
+            */
+           function setup() {
+          
                 var d = select("#descarga");
                 d.mousePressed(artemania);
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
                 background(250);
+                elColor = createColorPicker("#777777").parent("controles");
+                elSlider = createSlider(1, 5, 3).parent("controles");
             }
             function draw() {
                 stroke(elColor.color());
@@ -30,7 +39,7 @@
                 }
             }
             function artemania() {
-                saveCanvas("mi_atacazo_artistico", "jpg");
+                saveCanvas("mi_obra_de_arte", "jpg");
             }
             function windowResized() {
                 resizeCanvas(windowWidth, windowHeight);
